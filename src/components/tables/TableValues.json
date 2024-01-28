@@ -1,0 +1,27 @@
+{
+    "RandomValues": [
+        {
+            "item": "Resin",
+            "subsystem": "Suspension",
+            "owner": "Carlos A.",
+            "status": "Purchased"
+
+        },
+        {
+            "item": "Hardware",
+            "subsystem": "Electrical",
+            "owner": "Noah H.",
+            "status": "Purchased"
+
+        },
+        {
+            "item": "Car",
+            "subsystem": "ACE",
+            "owner": "Samuel M.",
+            "status": "Purchased"
+
+        }
+        
+    ]
+
+}

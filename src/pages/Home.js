@@ -1,8 +1,14 @@
 import React from "react";
-
+import PrTable from "../components/tables/PrTable"
 const Home = () => {
 	   return(
-			  <div>
+			  <div class ="w-screen">
+				<div class = "">
+					<PrTable/>
+
+				</div>
+				
+
 			  </div>
 	   )
 }
