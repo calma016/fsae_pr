@@ -29,8 +29,8 @@ function Sidebar() {
             </div>
           </div>
           <div>
-              <ul className='list-none'>
-                  <li className='flex items-center gap-2 m-3 p-2 cursor-pointer'> <AiOutlineHome /> </li>
+              <ul onClick={toggleSidebar} className='list-none'>
+                  <li className='flex items-center gap-2 m-2 p-2 cursor-pointer'> <AiOutlineHome /> </li>
                   <li className='flex items-center gap-2 m-2 p-2 cursor-pointer'> < MdOutlineShoppingCart /></li>
                   <li className='flex items-center gap-2 m-2 p-2 cursor-pointer'> <FaSackDollar /></li>
                   <li className='flex items-center gap-2 m-2 p-2 cursor-pointer'> <MdOutlineSettings /></li>
