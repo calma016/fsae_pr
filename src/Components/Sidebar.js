@@ -19,21 +19,21 @@ function Sidebar() {
   return (
     <div className="flex relative" >
       {/* minisidebar */}
-      <div className={isShowingSidebar ? "hidden" : 'absolute top-0 bottom-0 left-0 h-screen bg-purple-900 text-[#ffff] w-[50px] lg:hidden px-2'}>
+      <div className={isShowingSidebar ? "hidden" : 'absolute flex flex-col items-center top-0 bottom-0 left-0 h-screen bg-purple-900 text-[#ffff] w-[50px] lg:hidden p-2 '}>
       <div>
             <div className='flex items-center justify-between '>
-              <div></div>
+              {/* <div><h1>L</h1></div> */}
               <div >
                 <AiOutlineMenu onClick={toggleSidebar} className='cursor-pointer'/>
               </div>
             </div>
-          </div>
+       </div>
           <div>
               <ul onClick={toggleSidebar} className='list-none'>
-                  <li className='flex items-center gap-2 m-2 p-2 cursor-pointer'> <AiOutlineHome /> </li>
-                  <li className='flex items-center gap-2 m-2 p-2 cursor-pointer'> < MdOutlineShoppingCart /></li>
-                  <li className='flex items-center gap-2 m-2 p-2 cursor-pointer'> <FaSackDollar /></li>
-                  <li className='flex items-center gap-2 m-2 p-2 cursor-pointer'> <MdOutlineSettings /></li>
+                  <li className=' my-5 cursor-pointer'> <AiOutlineHome /> </li>
+                  <li className=' my-5 cursor-pointer'> < MdOutlineShoppingCart /></li>
+                  <li className=' my-5 cursor-pointer'> <FaSackDollar /></li>
+                  <li className=' my-5 cursor-pointer'> <MdOutlineSettings /></li>
               </ul>
           </div>
 
