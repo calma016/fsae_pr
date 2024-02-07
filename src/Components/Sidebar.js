@@ -10,7 +10,6 @@ import { MdOutlineSettings } from "react-icons/md";
 
 function Sidebar() {
   const [isShowingSidebar, setIsShowingSidebar] = useState(true)
-  // const [isShowingMiniSidebar, setIsShowingMiniSidebar] = useState(true)
 
   function toggleSidebar(){
     setIsShowingSidebar(!isShowingSidebar)
@@ -39,24 +38,24 @@ function Sidebar() {
 
       </div>
       {/* Sidebar */}
-       <div className={isShowingSidebar ?  " w-72 bg-purple-900 h-screen text-white leading-loose max-h-fit px-10 lg:hidden transition-all " : "hidden"} >
+       <div className={isShowingSidebar ?  " w-72 bg-purple-900 h-screen text-white leading-loose max-h-fit px-10 pt-4 lg:hidden transition ease-in-out " : "hidden"} >
           <div>
             <div className='flex items-center justify-between '>
               <div>Logo</div>
               <div >
                 {isShowingSidebar ? 
                 <MdOutlineClose onClick={toggleSidebar} className='cursor-pointer'/>:
-                <AiOutlineMenu onClick={toggleSidebar} className='cursor-pointer'/>
+                <AiOutlineMenu  onClick={toggleSidebar} className='cursor-pointer'/>
                 }
               </div>
             </div>
           </div>
           <div>
               <ul>
-                  <li className='flex items-center gap-2 m-3 p-2 cursor-pointer'> <AiOutlineHome /> <a>Home</a></li>
-                  <li className='flex items-center gap-2 m-2 p-2 cursor-pointer'> < MdOutlineShoppingCart /> <a>Purchases</a></li>
-                  <li className='flex items-center gap-2 m-2 p-2 cursor-pointer'> <FaSackDollar /> <a>Budget</a></li>
-                  <li className='flex items-center gap-2 m-2 p-2 cursor-pointer'> <MdOutlineSettings /> <a>Settings</a></li>
+                  <li className='flex items-center gap-2 cursor-pointer my-2'> <AiOutlineHome /> <a>Home</a></li>
+                  <li className='flex items-center gap-2 cursor-pointer my-2'> < MdOutlineShoppingCart /> <a>Purchases</a></li>
+                  <li className='flex items-center gap-2 cursor-pointer my-2'> <FaSackDollar /> <a>Budget</a></li>
+                  <li className='flex items-center gap-2 cursor-pointer my-2'> <MdOutlineSettings /> <a>Settings</a></li>
               </ul>
           </div>
        </div>
